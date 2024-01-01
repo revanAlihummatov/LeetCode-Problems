@@ -1,8 +1,8 @@
 package leetcodeMeseleler;
 
-public class RDFSA {
+public class RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {
-        RDFSA rdfsa = new RDFSA();
+        RemoveDuplicatesFromSortedArray rdfsa = new RemoveDuplicatesFromSortedArray();
         int[] nums = {1, 1, 2};
         int result = rdfsa.removeDuplicates(nums);
         System.out.println(result);
