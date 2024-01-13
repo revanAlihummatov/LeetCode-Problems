@@ -9,11 +9,10 @@ public class ReverseInteger {
 
     public int reverse(int x) {
         int reversedX = 0;
-        int sign = 1;
+        int menfiormusbet = 1;
 
         if (x < 0) {
-            sign = -1;
-            x = Math.abs(x);
+            menfiormusbet = -1;
         }
 
         while (x != 0) {
@@ -22,7 +21,7 @@ public class ReverseInteger {
             reversedX = reversedX * 10 + digit;
         }
 
-        reversedX *= sign;
+        reversedX *= menfiormusbet;
         return reversedX;
     }
 }
