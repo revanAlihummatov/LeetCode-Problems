@@ -1,4 +1,4 @@
-package leetcodeMeseleler;
+package array;
 
 import java.util.Arrays;
 

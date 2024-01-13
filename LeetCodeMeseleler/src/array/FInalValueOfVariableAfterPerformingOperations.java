@@ -1,4 +1,4 @@
-package leetcodeMeseleler;
+package array;
 
 public class FInalValueOfVariableAfterPerformingOperations {
     public static void main(String[] args) {
