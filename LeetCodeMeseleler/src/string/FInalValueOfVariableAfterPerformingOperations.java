@@ -1,4 +1,4 @@
-package array;
+package string;
 
 public class FInalValueOfVariableAfterPerformingOperations {
     public static void main(String[] args) {
