@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class MedianOfSortedArrays {
     public static void main(String[] args) {
-        System.out.println(findMedianSortedArrays(new int[]{1, 2}, new int[]{3, 4}));
+        System.out.println(findMedianSortedArrays(new int[]{2, 1}, new int[]{3, 4}));
     }
 
     /*
@@ -27,7 +27,8 @@ public class MedianOfSortedArrays {
             nums12[i] = nums2[z];
             z++;
         }
-        Arrays.sort(nums12);
+        bubbleSort(nums12);//mənim metodum
+//        Arrays.sort(nums12);//Java metodu
         if (nums12.length % 2 == 0) {
             double length2 = (double) nums12.length / 2;
             number = (double) (nums12[(int) length2] + (nums12[(int) (length2 - 1)])) / 2;
@@ -38,6 +39,19 @@ public class MedianOfSortedArrays {
             number = nums12[length21 - 1];
         }
         return number;
+    }
+
+    public static void bubbleSort(int[] arr) {
+        int val = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    val = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = val;
+                }
+            }
+        }
     }
 
 
