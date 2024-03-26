@@ -1,6 +1,6 @@
 package allProblems;
 
-public class RomanToInteger13 {
+public class RomanToInteger {
     public static void main(String[] args) {
         String s = "XIX";
         System.out.println(romanToInt(s));
