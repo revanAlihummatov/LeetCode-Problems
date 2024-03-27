@@ -8,7 +8,7 @@ public class ValidPalindrome {
         return false;
     }
     public static void connectString(String s){
-        System.out.println();
+
     }
 
 }
